@@ -80,10 +80,10 @@ const MasterLife = () => {
             <motion.div
               whileInView="visible"
               viewport={{ once: true }}
-              animate={{ rotate: -360 }}
+              animate={{ rotate: -390 }}
               transition={{ type: "spring", duration: 4, bounce: 0.4 }}
               style={{ top: "55px" }}
-              className="absolute h-16 w-12"
+              className="absolute h-16 w-14"
             >
               <Image
                 height={100}
@@ -190,7 +190,7 @@ const MasterLife = () => {
           viewport={{ once: true }}
           animate={{ x: 150 }}
           transition={{ type: "spring", duration: 4, bounce: 0.4 }}
-          style={{ left: "150px", top: "0px" }}
+          style={{ left: "10px", top: "0px" }}
           className="absolute  h-12 w-12"
         >
           <Image src="/singleLeaf.png" height={48} width={48} alt="" />
