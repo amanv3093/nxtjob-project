@@ -20,13 +20,13 @@ export default function Home() {
       <BeastsIQ />
       <SoundsFamiliar />
       <MeetAhead />
-      {/*<SelfImprovement />
+      <SelfImprovement />
       <BestYouEQ />
       <AnonymousBox />
       <TestBox />
       <WorkWithUs />
       <OpenVacancies />
-      <Footer /> */}
+      <Footer />
     </>
   );
 }

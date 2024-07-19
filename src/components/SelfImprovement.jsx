@@ -49,10 +49,10 @@ const SelfImprovement = () => {
     },
   ]);
   return (
-    <section className="px-20 mt-10 mb-24 ">
+    <section className="lg:px-20 px-3 mt-10 mb-24 ">
       <div className="flex flex-row justify-between items-center">
         <motion.div
-          className="inline-block"
+          className="inline-block w-full lg:w-auto"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -62,11 +62,11 @@ const SelfImprovement = () => {
             hidden: { opacity: 0, scale: 0, x: "-50%" },
           }}
         >
-          <div className="text-base font-medium text-black pb-2">
+          <div className="text-base font-medium text-black pb-2 text-center lg:text-start">
             Wrong with self improvement & how we&apos;re fixing it.
           </div>
 
-          <div className="text-5xl pb-3 font-bold text-black">
+          <div className="text-[max(2.9vw,28px)] text-center lg:text-start pb-3 font-bold text-black">
             Self Improvement. Ugh.
           </div>
         </motion.div>
@@ -84,13 +84,13 @@ const SelfImprovement = () => {
             visible: {
               opacity: 1,
               scale: 1,
-              x: [0, -100, -300, -450, -540],
-              y: [35, 20, 10, 0, 0],
-              rotate: [-60, -45, -35, -35, -35, -35, -2],
+              x: [0, -100, -300, -450, -650],
+              y: [35, 20, 10, 0, 9],
+              rotate: [-60, -45, -35, -35, -35, -35, -5],
             },
             hidden: { opacity: 0, scale: 0 },
           }}
-          className="flex items-center justify-center"
+          className="blue-ghost1 items-center justify-center hidden lg:flex"
         >
           <Image
             src="/blue-ghost.png"
@@ -101,7 +101,7 @@ const SelfImprovement = () => {
         </motion.div>
       </div>
 
-      <div className="timeline px-20 pt-14 h-96 overflow-y-scroll">
+      <div className="timeline lg:px-20 px-3 pt-14 h-96 overflow-y-scroll">
         <div className="border-l-2 border-l-violet-300   flex  flex-col gap-16">
           <Reveal keyframes={customAnimation}>
             {textData.map((e, index) => (

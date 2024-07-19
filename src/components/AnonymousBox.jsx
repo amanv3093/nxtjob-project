@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 const AnonymousBox = () => {
   return (
-    <section className="mt-16 mb-32 rounded-3xl bg-blue-50 p-10 mx-24">
+    <section className="mt-16 mb-32 rounded-3xl bg-blue-50 p-10 lg:mx-24 mx-3">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -19,14 +19,14 @@ const AnonymousBox = () => {
           Let your friends, family, and co-worker (anonymously) rate your social
           skills
         </h3>
-        <h1 className="text-[2.4rem] font-bold text-center mt-4">
+        <h1 className="text-[max(2.4vw,22px)] font-bold text-center mt-4">
           Ever wondered what others think of you?
         </h1>
       </motion.div>
       <div className="mt-8 flex justify-center relative">
-        <div className="absolute top-[1.5rem] w-[780px] text-transparent border-t border-[#ffce9e] h-4 border-dashed"></div>
-        <div className="flex justify-evenly w-[70rem] z-[10]">
-          <div className="flex flex-col justify-center">
+        <div className="absolute top-[1.5rem] lg:w-[780px] w-full text-transparent border-t border-[#ffce9e] h-4 border-dashed"></div>
+        <div className="flex justify-evenly items-start w-[70rem] z-[10]">
+          <div className="flex flex-col md:justify-center justify-start">
             <div className="flex justify-center">
               <div className="pb-3">
                 <Image width={50} height={50} alt="" src="/1st-prize.png" />
@@ -80,7 +80,7 @@ const AnonymousBox = () => {
                   hidden: { opacity: 0, scale: 0.5 },
                 }}
               >
-                <div className="absolute text-white p-2 bg-violet-600 rounded-lg top-[-3rem] left-[-3rem]">
+                <div className="absolute text-white p-2 bg-violet-600 rounded-lg lg:text-base text-[10px] top-[-3rem] left-[-3rem]">
                   You
                 </div>
               </motion.div>
@@ -96,7 +96,7 @@ const AnonymousBox = () => {
                   hidden: { opacity: 0.5, scale: 0.5 },
                 }}
               >
-                <div className="absolute whitespace-nowrap text-white p-2 bg-[#40C2FC] rounded-lg top-[2rem] left-[82%]">
+                <div className="absolute whitespace-nowrap text-white p-2 bg-[#40C2FC] rounded-lg lg:text-base text-[10px] top-[2rem] lg:left-[82%] -left-14">
                   Anonymonos 1
                 </div>
               </motion.div>
@@ -112,7 +112,7 @@ const AnonymousBox = () => {
                   hidden: { opacity: 0.5, scale: 0.5 },
                 }}
               >
-                <div className="absolute  whitespace-nowrap  text-white p-2 bg-[#FDB338] rounded-lg top-[-3rem] left-[0.5rem]">
+                <div className="absolute  whitespace-nowrap  text-white p-2 bg-[#FDB338] rounded-lg lg:text-base text-[10px] top-[-3rem] left-[0.5rem]">
                   Anonymonos 2
                 </div>
               </motion.div>
@@ -128,13 +128,13 @@ const AnonymousBox = () => {
                   hidden: { opacity: 0.5, scale: 0.5 },
                 }}
               >
-                <div className="absolute  whitespace-nowrap   text-white p-2 bg-[#58C896] rounded-lg  top-[2rem] left-[82%]">
+                <div className="absolute  whitespace-nowrap   text-white p-2 bg-[#58C896] rounded-lg lg:text-base text-[10px]  top-[2rem]  lg:left-[82%] left-[-3rem]">
                   Anonymonos 3
                 </div>
               </motion.div>
             </div>
           </div>
-          <div className="border-t border-yellow-700 h-1 absolute top-[50%]  w-[745px]"></div>
+          <div className="border-t border-yellow-700 h-1 absolute top-[50%]  lg:w-[780px] w-[91%] line1"></div>
         </div>
       </div>
     </section>

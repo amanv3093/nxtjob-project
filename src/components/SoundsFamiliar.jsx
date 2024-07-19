@@ -50,7 +50,7 @@ const SoundsFamiliar = () => {
           </h1>
         </motion.div>
         <motion.div
-          className="ghost-red hidden md:block"
+          className="ghost-red hidden lg:block"
           viewport={{ once: true }}
           transition={{
             duration: 2.1,
@@ -95,11 +95,11 @@ const SoundsFamiliar = () => {
         <div className="rounded-xl bg-[#6341EF] min-w-[350px]  p-6 flex flex-col gap-4 hover:scale-110 hover:-rotate-12 hover:duration-300  ease-in-out">
           <Image width={40} height={40} alt="" src="/frowning.png" />
           <h3 className="font-semibold text-base text-white">
-            You get a prmotion at work
+            You get a promotion at work
           </h3>
           <p className="text-white text-sm">
             You question yourself and wonder unqualified imposter instead of
-            trusting yourself & your abilites
+            trusting yourself & your abilities
           </p>
         </div>
 
@@ -114,8 +114,8 @@ const SoundsFamiliar = () => {
             You attend a class reunion
           </h3>
           <p className="text-gray-700 text-sm">
-            You compare yourelf with your peers your self judgement more
-            indeoendent of others.
+            You compare yourself with your peers your self judgement more
+            independent of others.
           </p>
         </div>
 
@@ -126,7 +126,7 @@ const SoundsFamiliar = () => {
           </h3>
           <p className="text-gray-700 text-sm">
             You play on your phone instead of confidentaly approaching
-            starangersand striking up a chat
+            starangers and striking up a chat
           </p>
         </div>
 
