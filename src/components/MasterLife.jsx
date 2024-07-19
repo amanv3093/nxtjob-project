@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const MasterLife = () => {
   return (
     <div className="lg:px-20 px-3 mt-28">
-      <div className="bg-[rgb(238,235,254)] lg:h-[550px] h-auto pb-16 lg:pb-0  relative rounded-3xl flex flex-col md:flex-row overflow-hidden">
+      <div className="bg-[rgb(238,235,254)] lg:h-[550px] h-auto pb-16 sm:pb-0  relative rounded-3xl flex flex-col md:flex-row overflow-hidden">
         <div className=" flex basis-1/2 items-center justify-center ">
           <div className="lg:pl-20   flex items-center justify-start flex-col">
             <div className="w-full pt-6 lg:pt-0">
@@ -174,7 +174,7 @@ const MasterLife = () => {
           animate={{ y: -150 }}
           transition={{ type: "spring", duration: 4, bounce: 0.4 }}
           style={{ left: "-15px", top: "50%" }}
-          className="absolute bg-blue-300 rounded-full h-12 w-12"
+          className="absolute bg-blue-300 rounded-full h-12 w-12 hidden lg:block"
         ></motion.div>
         {/* small circle 3 */}
         <motion.div

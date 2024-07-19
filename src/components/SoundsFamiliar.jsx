@@ -29,10 +29,13 @@ const SoundsFamiliar = () => {
     }
   }, [isIntersecting]);
   return (
-    <section className="overflow-x-hidden mt-12 mb-32 p-4 px-20" ref={ref}>
-      <div className="flex flex-row items-center justify-between">
+    <section
+      className="overflow-x-hidden mt-12 mb-32 lg:p-4 p-0 px-3 lg:px-20"
+      ref={ref}
+    >
+      <div className="flex flex-row items-center justify-between w-full">
         <motion.div
-          className="inline-block"
+          className="inline-block w-full"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -42,11 +45,12 @@ const SoundsFamiliar = () => {
             hidden: { opacity: 0, scale: 0, x: "-50%" },
           }}
         >
-          <h1 className="text-[40px] font-bold px-4 mb-5 ">
+          <h1 className=" text-[max(2.8vw,22px)] font-bold px-4 mb-5 text-center lg:text-start">
             Does this sound familiar...
           </h1>
         </motion.div>
         <motion.div
+          className="ghost-red hidden md:block"
           viewport={{ once: true }}
           transition={{
             duration: 2.1,
@@ -54,7 +58,7 @@ const SoundsFamiliar = () => {
             type: "spring",
             delay: 0.3,
           }}
-          intial="hidden"
+          initial="hidden"
           whileInView="visible"
           variants={{
             visible: {
@@ -64,14 +68,17 @@ const SoundsFamiliar = () => {
               y: [35, 20, 10, 0, -10],
               rotate: [-60, -45, -35, -35, -35, -35, -10],
             },
-            hidden: { opacity: 0, scale: 0 },
+            hidden: {
+              opacity: 0,
+              scale: 0,
+            },
           }}
         >
           <Image width={60} height={60} alt="" src="/red-ghost.png" />
         </motion.div>
       </div>
       <div
-        className=" p-10 flex space-x-8 gap-7 items-center overflow-x-auto hide-scrollbar h-250"
+        className=" lg:px-10 lg:py-10 px-2 py-2 flex space-x-8 gap-7 items-center overflow-x-auto hide-scrollbar h-250"
         ref={boxContainerRef}
       >
         <div className="rounded-xl bg-[#EEEBFE] min-w-[350px]  p-6 flex flex-col gap-4 hover:scale-110 hover:-rotate-12 hover:duration-300 ease-in-out">

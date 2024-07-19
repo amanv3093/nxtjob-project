@@ -38,3 +38,20 @@
 .timeline::-webkit-scrollbar {
   display: none;
 }
+@media screen and (max-width: 768px) {
+  .ghost-red {
+    transform: translateX(-195px) translateY(-10px) scale(1) rotate(-10deg) !important;
+  }
+  .ghost-red img {
+    width: 40px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .ghost-red {
+    transform: translateX(-390px) translateY(-10px) scale(1) rotate(-10deg) !important;
+  }
+  .ghost-red img {
+    width: 50px;
+  }
+}

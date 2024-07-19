@@ -17,10 +17,10 @@ export default function Home() {
     <>
       <Navbar />
       <MasterLife />
-      {/*<BeastsIQ />
+      <BeastsIQ />
       <SoundsFamiliar />
       <MeetAhead />
-      <SelfImprovement />
+      {/*<SelfImprovement />
       <BestYouEQ />
       <AnonymousBox />
       <TestBox />

@@ -5,31 +5,32 @@ import { motion } from "framer-motion";
 
 const MeetAhead = () => {
   return (
-    <div className="px-20 relative mt-7 mb-32">
-      <div
-        style={{ height: "450px" }}
-        className="bg-[#FEF7F1] overflow-hidden relative flex rounded-3xl"
-      >
+    <div className="lg:px-20 px-3 relative mt-7 mb-32">
+      <div className="bg-[#FEF7F1] lg:h-[450px] overflow-hidden relative flex flex-col lg:flex-row rounded-3xl">
         <div className=" basis-1/2 px-7">
           <div className="flex flex-col mt-20 gap-3">
             <div>
-              <p className="text-sm text-left">Built Out of Frustration</p>
+              <p className="text-sm lg:text-left text-center">
+                Built Out of Frustration
+              </p>
             </div>
             <div>
-              <p className="text-4xl font-bold">Meet the ahead app</p>
+              <p className="text-4xl font-bold lg:text-left text-center">
+                Meet the ahead app
+              </p>
             </div>
           </div>
         </div>
-        <div className="basis-1/2 flex items-center">
-          <div className="flex flex-col gap-6 w-4/5  items-center text-[#37383C]">
+        <div className="basis-1/2 flex items-center pb-11 pt-[17rem] lg:pb-0 lg:pt-0">
+          <div className="flex flex-col gap-6 lg:w-4/5 w-full   items-center text-[#37383C]">
             <div className="">
-              <p className="text-lg">
+              <p className="text-lg lg:text-left text-center">
                 A personalized pocket coach that provide
                 bite-sized,science-driven tools to boost emotional intelligence.
               </p>
             </div>
             <div>
-              <p className="text-lg">
+              <p className="text-lg lg:text-left text-center">
                 Think of it as a pocket cheerleader towards a better, more
                 fulfilling.
               </p>
@@ -87,7 +88,7 @@ const MeetAhead = () => {
             ease: "easeInOut",
             delay: 0.6,
           }}
-          className="h-28 w-24 absolute"
+          className="h-28 w-24 absolute hidden lg:block"
           style={{
             right: "67%",
             bottom: "13%",
@@ -99,8 +100,8 @@ const MeetAhead = () => {
 
         {/*GHost Div  */}
         <div
-          style={{ top: "62%", left: "15%", transform: "translate(-50%,-50%)" }}
-          className="absolute  flex justify-center items-center rounded-full bg-white h-44 w-44 border-[10px] border-[#F6F6F6]"
+          style={{ transform: "translate(-50%,-50%)" }}
+          className="absolute top-[46%] left-[50%] lg:top-[62%] lg:left-[15%]  flex justify-center items-center rounded-full bg-white h-44 w-44 border-[10px] border-[#F6F6F6]"
         >
           <motion.div
             transition={{ duration: "1.5" }}
@@ -175,7 +176,7 @@ const MeetAhead = () => {
           duration: 2,
         }}
         style={{ right: "320px", top: "60px" }}
-        className="h-11 w-11 absolute "
+        className="h-11 w-11 absolute hidden lg:block"
       >
         <Image height={100} width={100} src="/singleLeaf.png" alt="" />
       </motion.div>
