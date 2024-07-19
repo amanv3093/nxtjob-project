@@ -17,7 +17,7 @@ export default function Home() {
     <>
       <Navbar />
       <MasterLife />
-      <BeastsIQ />
+      {/*<BeastsIQ />
       <SoundsFamiliar />
       <MeetAhead />
       <SelfImprovement />
@@ -26,7 +26,7 @@ export default function Home() {
       <TestBox />
       <WorkWithUs />
       <OpenVacancies />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }

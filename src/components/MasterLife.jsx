@@ -5,30 +5,29 @@ import { motion } from "framer-motion";
 
 const MasterLife = () => {
   return (
-    <div className="px-20 mt-28">
-      <div
-        style={{ height: "550px" }}
-        className="bg-[rgb(238,235,254)] relative rounded-3xl flex flex-col md:flex-row overflow-hidden"
-      >
+    <div className="lg:px-20 px-3 mt-28">
+      <div className="bg-[rgb(238,235,254)] lg:h-[550px] h-auto pb-16 lg:pb-0  relative rounded-3xl flex flex-col md:flex-row overflow-hidden">
         <div className=" flex basis-1/2 items-center justify-center ">
-          <div className="pl-20  flex items-center justify-start flex-col">
-            <div className="w-full">
-              <p className="text-base text-[#37383C]">Ahead app</p>
+          <div className="lg:pl-20   flex items-center justify-start flex-col">
+            <div className="w-full pt-6 lg:pt-0">
+              <p className="text-base text-center lg:text-start text-[#37383C]">
+                Ahead app
+              </p>
             </div>
             <div>
-              <p className="mt-5  text-5xl font-bold">
+              <p className="mt-5 text-center lg:text-start  text-[max(3.5vw,22px)] font-bold">
                 Master Your life by mastering emotions
               </p>
             </div>
-            <div className="flex gap-7 items-center  w-full">
+            <div className="flex  gap-7 lg:justify-start justify-center items-center  w-full pb-12 lg:pb-0">
               <Image
                 width={150}
                 height={30}
                 alt="Apple Play Store"
                 src="/appleStoreIcon.svg"
-                className="cursor-pointer"
+                className="cursor-pointer w-[105px] lg:w-[150px]"
               />
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-2 items-center lg:items-start">
                 <div className="flex gap-2">
                   {[...Array(5)].map((val, index) => {
                     return (
@@ -42,14 +41,16 @@ const MasterLife = () => {
                     );
                   })}
                 </div>
-                <p className="text-[#37383C] text-sm">100+ AppStore reviews</p>
+                <p className="text-[#37383C] lg:text-sm text-xs">
+                  100+ AppStore reviews
+                </p>
               </div>
             </div>
           </div>
         </div>
         <div className="basis-1/2 flex items-center justify-center w-full">
           {/* <div className='flex items-center  justify-center bg-bgMobile h-60 w-60 rounded-full'> */}
-          <div className="h-64 w-64 flex items-center ">
+          <div className="lg:h-64 lg:w-64 h-[8rem] w-[8rem] flex items-center ">
             <Image
               className="h-full w-full"
               height={100}
@@ -74,7 +75,7 @@ const MasterLife = () => {
               ease: "easeInOut",
             }}
             style={{ border: "3px solid white ", borderStyle: "dashed" }}
-            className=" absolute rounded-full h-96 w-96  border-dashed border-white"
+            className=" absolute rounded-full lg:h-96 lg:w-96 w-48 h-48  border-dashed border-white"
           >
             {/* red ghost */}
             <motion.div
@@ -82,8 +83,8 @@ const MasterLife = () => {
               viewport={{ once: true }}
               animate={{ rotate: -390 }}
               transition={{ type: "spring", duration: 4, bounce: 0.4 }}
-              style={{ top: "55px" }}
-              className="absolute h-16 w-14"
+              // style={{ top: "55px" }}
+              className="absolute h-16 w-14 top-0 lg:top-[55px]"
             >
               <Image
                 height={100}
@@ -151,7 +152,7 @@ const MasterLife = () => {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="h-28 w-24 absolute"
+          className="h-28 w-24 absolute hidden lg:block"
           style={{ right: "56%", top: "9%", transform: "translate(50%,50%)" }}
         >
           <Image height={100} width={100} src="/leaf.png" alt="" />
@@ -191,7 +192,7 @@ const MasterLife = () => {
           animate={{ x: 150 }}
           transition={{ type: "spring", duration: 4, bounce: 0.4 }}
           style={{ left: "10px", top: "0px" }}
-          className="absolute  h-12 w-12"
+          className="absolute  h-12 w-12 hidden lg:block"
         >
           <Image src="/singleLeaf.png" height={48} width={48} alt="" />
         </motion.div>
