@@ -36,6 +36,6 @@ To set up this project locally, follow these steps:
 
 - npm run dev
 
-# Open your browser and visit:
+### Open your browser and visit:
 
 - http://localhost:3000

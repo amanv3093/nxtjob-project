@@ -9,6 +9,8 @@
 
   /* font-family: "Poppins", sans-serif !important; */
 }
+/* styles/globals.css */
+
 .hide-scrollbar {
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */

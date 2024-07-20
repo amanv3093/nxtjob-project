@@ -71,7 +71,7 @@ export default function Navbar() {
       <div className="md:hidden ">
         <ul
           style={{
-            top: isOpen ? "-500px" : "78px",
+            top: isOpen ? "-1200px" : "78px",
             height: "calc(100vh - 78px)",
           }}
           className="absolute left-0 w-full bg-white shadow-md p-4"
