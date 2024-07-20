@@ -25,7 +25,7 @@ const vacancies = [
 
 const OpenVacancies = () => {
   return (
-    <section className="mt-20 py-8 px-24 h-96">
+    <section className="mt-20 py-8 lg:px-24 px-3 h-auto">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -40,13 +40,15 @@ const OpenVacancies = () => {
           },
         }}
         style={{
-          width: "100%", // Adjust the width as needed
-          overflow: "hidden", // Hide overflowing text while sliding
+          width: "100%",
+          overflow: "hidden",
         }}
       >
-        <h1 className="text-5xl font-bold">Open Vacancies</h1>
+        <h1 className="text-5xl font-bold text-center lg:text-start">
+          Open Vacancies
+        </h1>
       </motion.div>
-      <div className="mt-12 grid grid-cols-3 justify-between gap-8">
+      <div className="mt-12 flex justify-between lg:flex-row flex-col  gap-8">
         {vacancies.map((vac, index) => {
           return <HoverCard key={index} vac={vac} index={index} />;
         })}
@@ -60,17 +62,14 @@ const HoverCard = ({ vac, index }) => {
     <>
       <motion.div
         initial={{ height: 170 }}
-        whileHover={{ height: 250 }}
         key={index}
-        onHoverStart={() => setButtonVisible(true)}
-        onHoverEnd={() => setButtonVisible(false)}
         transition={{ ease: "easeInOut", duration: 0.3 }}
         className="bg-[#fefbec] rounded-lg hover:bg-[#ece7d1] hover:cursor-pointer"
       >
         <div className="rounded-2xl  p-6 px-12">
-          <h2 className="text-xl font-bold">{vac.jobTitle}</h2>
+          <h2 className="text-base font-bold">{vac.jobTitle}</h2>
 
-          <ul className="mt-4 text-sm font-semibold list-disc pl-4">
+          <ul className="mt-4 text-xs font-semibold list-disc pl-4 flex flex-col gap-3">
             <li className="">{vac.position}</li>
             <li className="">{vac.location}</li>
             <li className="">{vac.pay}</li>

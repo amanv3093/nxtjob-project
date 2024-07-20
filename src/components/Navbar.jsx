@@ -28,10 +28,10 @@ export default function Navbar() {
           </ul>
         </div>
         <div onClick={() => setIsOpen(!isOpen)} className="md:hidden">
-          <button className="cursor-pointer text-sm font-semibold text-white bg-black rounded-full px-5 py-3 font-semibold">
+          <button className="cursor-pointer text-sm font-semibold  rounded-xl  font-semibold">
             {isOpen ? (
               <svg
-                className="w-6 h-6 text-white"
+                className="w-10 h-10 text-black"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -46,7 +46,7 @@ export default function Navbar() {
               </svg>
             ) : (
               <svg
-                className="w-6 h-6 text-white"
+                className="w-10 h-10 text-black"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -68,24 +68,31 @@ export default function Navbar() {
           </button>
         </div>
       </header>
-      <div className="md:hidden">
+      <div className="md:hidden ">
         <ul
-          style={{ top: isOpen ? "-500px" : "78px" }}
-          className="absolute left-0 w-full bg-white shadow-md"
+          style={{
+            top: isOpen ? "-500px" : "78px",
+            height: "calc(100vh - 78px)",
+          }}
+          className="absolute left-0 w-full bg-white shadow-md p-4"
         >
-          <li className="cursor-pointer font-semibold p-3 border-b border-gray-200">
+          <li className="cursor-pointer font-semibold p-3 pt-6 border-b border-gray-200">
             Emotions
           </li>
-          <li className="cursor-pointer font-semibold p-3 border-b border-gray-200">
+          <li className="cursor-pointer font-semibold p-3 pt-6 border-b border-gray-200">
             Manifesto
           </li>
-          <li className="cursor-pointer font-semibold p-3 border-b border-gray-200">
+          <li className="cursor-pointer font-semibold p-3 pt-6 border-b border-gray-200">
             Self awareness test
           </li>
-          <li className="cursor-pointer font-semibold p-3 border-b border-gray-200">
+          <li className="cursor-pointer font-semibold p-3 pt-6 border-b border-gray-200">
             Work with us
           </li>
-          <li className="cursor-pointer font-semibold p-3">Download app</li>
+          <div className="flex justify-center mt-8 w-full">
+            <button className="cursor-pointer font-semibold p-3 mt-4 bg-black w-full text-white">
+              Download app
+            </button>
+          </div>
         </ul>
       </div>
     </div>
