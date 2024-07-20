@@ -50,12 +50,12 @@ const MasterLife = () => {
         </div>
         <div className="basis-1/2 flex items-center justify-center w-full">
           {/* <div className='flex items-center  justify-center bg-bgMobile h-60 w-60 rounded-full'> */}
-          <div className="lg:h-64 lg:w-64 h-[8rem] w-[8rem] flex items-center ">
+          <div className="lg:h-64 lg:w-64 h-[8rem] w-[8rem] flex items-center  bg-[#eae8ed] rounded-full">
             <Image
               className="h-full w-full"
               height={100}
               width={100}
-              src="/mobile.svg"
+              src="/mobile.d07c5c3a.svg"
               alt=""
             />
           </div>

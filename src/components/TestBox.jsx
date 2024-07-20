@@ -1,14 +1,15 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+
 const TestBox = () => {
   return (
     <section className="mt-20 flex flex-col gap-3 text-center p-8">
       <p className="text-center text-[#37383C]">We take Privacy seriously</p>
       <p className="font-bold text-3xl">Before you get started</p>
       <p className="text-xl font-normal text-[#37383C]">
-        &quot;We Wont share your answers with anyone.
-        <br /> (and wont tell you which friends said what about you).&quot;
+        "We Wont share your answers with anyone.
+        <br /> (and wont tell you which friends said what about you)."
       </p>
       <div className="flex flex-row gap-2 items-center justify-center mt-4">
         <p className="">with Love...</p>
@@ -26,9 +27,9 @@ const TestBox = () => {
           }}
           style={{
             overflow: "hidden",
-            fontFamily: "Great Vibes, cursive",
+            fontFamily: "circular",
           }}
-          className=""
+          className="text-[20px] "
         >
           Team ahead
         </motion.div>
@@ -58,12 +59,12 @@ const TestBox = () => {
             },
           }}
           style={{
-            width: "100%", // Adjust the width as needed
-            overflow: "hidden", // Hide overflowing text while sliding
+            width: "100%",
+            overflow: "hidden",
           }}
           className="pt-3"
         >
-          <button className="rounded-3xl p-4 px-6 text-white bg-black">
+          <button className="rounded-3xl py-3 px-5 text-white bg-black">
             Start Test
           </button>
         </motion.div>
